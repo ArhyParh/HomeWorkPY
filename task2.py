@@ -6,7 +6,6 @@
 import random
 
 def find_x1_x2(Sum,multiplication):
-    x = None
     d = Sum*Sum - 4*multiplication
     x1 = ((Sum+d**(1/2))/2)
     x2 = ((Sum-d**(1/2))/2)

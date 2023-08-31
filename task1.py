@@ -29,4 +29,4 @@ list = []
 fill_the_list(a)
 
 print(list)
-print("Минимальное число монет. которые нужно перевернуть =",find_count(list))
+print("Минимальное число монет, которые нужно перевернуть =",find_count(list))
