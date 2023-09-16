@@ -14,9 +14,15 @@ def generate_random_list(size:int, lover:int, upper:int)->int:
     return list_back
 
 
-def find_result_between(list_back, min, max):
+def print_and_find_result_between(list_back, min, max):
     print([x for x in list_back if min < x and x < max])
 
-list_i = generate_random_list(10,-10,10)
+
+size = int(input("Введите количество эллементов спика: "))
+lover = int(input("Ведите нижний предел значений списка: "))
+upper = int(input("Введите верхний предел значений списка: "))
+min = int(input("Введите нижний предел желаемого ограничения: "))
+max = int(input("Введите верхний предел желаемого ограничения: "))
+list_i = generate_random_list(size,lover,upper)
 print(list_i)
-find_result_between(list_i,0,10)
+print_and_find_result_between(list_i,min,max)
